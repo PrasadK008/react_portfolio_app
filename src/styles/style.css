@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.hero button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+} */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+      minmax(200px, 1fr));
+  grid-gap: 10px
+}
+
+.grid>div {
+  font-size: 20px;
+  padding: 1rem;
+  color: yellow;
+  text-align: center;
+  background: red;
+}
